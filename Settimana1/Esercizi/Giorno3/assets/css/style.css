@@ -1,0 +1,63 @@
+style {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+header {
+    text-align: center;
+
+}
+
+header img {
+    width: 20%;
+
+}
+
+.claim {
+    background-color: rgb(251, 240, 252);
+    text-align: center;
+    border-top: rgb(241, 232, 93) solid;
+    color: #107777;
+}
+
+
+#primo {
+    font-family: Georgia, 'Times New Roman', Times, serif font-weight: bold;
+}
+
+h1 {
+    text-align: center;
+}
+
+div p {
+    text-align: left;
+    font-family: Georgia, 'Times New Roman', Times, serif
+}
+
+figure {
+    text-align: center;
+
+}
+
+figcaption {
+    color: gray;
+}
+
+#del2 {
+    color: red;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+
+h3 {
+    text-align:left;
+}
+
+ul {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 0 auto;
+    text-align: left;
+}
+main {
+    margin: 0 auto;
+    width: 50vw;
+}
+
