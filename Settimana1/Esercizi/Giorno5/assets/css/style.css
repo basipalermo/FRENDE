@@ -138,7 +138,11 @@ footer {
 
 address {
     font-size: 12px;
-   
+    
+}
+hr {
+    border: 2px solid white;
+    width: 15%;
 }
 a:link { 
     color: white;
