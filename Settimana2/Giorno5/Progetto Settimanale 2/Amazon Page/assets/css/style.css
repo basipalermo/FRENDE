@@ -15,32 +15,32 @@ body {
 .top {
     background-color: #222F3F;
 }
+
 .logo {
     width: 150px;
     height: auto;
     margin-left: 30px;
     padding: 5px;
+    box-shadow: none;
 }
 
 /* NAVBAR */
 .navbar {
     background-color: #364759;
     padding: 1px;
-    
-    
 }
+
 .navbar li {
     display: inline-block;
     margin-right: 20px;
-    color: white; 
-    
-
+    color: white;
 }
+
 /* MAIN */
 main {
     background-color: #E9EDEE;
     padding: 1px;
-    
+
 }
 
 .primo {
@@ -49,13 +49,9 @@ main {
     margin: 30px;
     text-align: center;
     padding: 1px;
-  
-   
-   
 }
+
 .secondo {
-    
-    
     background-image: url(../images/bg-image.png);
     background-repeat: repeat;
     text-align: center;
@@ -66,18 +62,75 @@ main {
     padding: 50px;
 }
 
-.terzo { margin: 30px;
-    justify-content: center;
+p {
+    text-align: center;
 
 }
 
-.container img {
-    float: left;
-    margin-right: 10px; 
-   padding: 10px;
-    height: 100vh;
-    
-    
+span {
+    color: #30717C;
+    font-weight: bold;
+}
+
+.image-container {
+    margin: 30px;
+    text-align: center;
+    background-color: white;
+    padding: 20px;
+
+
+}
+
+img {
+    height: 50vh;
+    width: 20vw;
+    margin: 10px;
+    border-radius: 8px;
+    display: inline;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+
+}
+
+.terzo p {
+    text-align: left;
+}
+
+.quarto img {
+    margin: auto;
+    padding: 1px;
+    width: 93vw;
+    height: 50vh;
+    box-shadow: none;
+}
+
+.quarto p {
+    text-align: center;
 }
 
 /* FOOTER */
+
+#back {
+    color: white;
+    background-color: #364759;
+    padding: 1px;
+    font-weight: bold;
+}
+
+footer {
+    background-color: #222F3F;
+    padding: 2px;
+    text-align: center;
+
+}
+
+footer img {
+    height: auto;
+    width: 150px;
+    margin: 50px;
+    box-shadow: none;
+}
+
+a:active {
+
+    color: white;
+}
