@@ -1,0 +1,83 @@
+/* IMPOSTAZIONI GENERALI */
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    line-height: 1.1;
+    font-size: 1.2em;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* HEADER */
+
+.top {
+    background-color: #222F3F;
+}
+.logo {
+    width: 150px;
+    height: auto;
+    margin-left: 30px;
+    padding: 5px;
+}
+
+/* NAVBAR */
+.navbar {
+    background-color: #364759;
+    padding: 1px;
+    
+    
+}
+.navbar li {
+    display: inline-block;
+    margin-right: 20px;
+    color: white; 
+    
+
+}
+/* MAIN */
+main {
+    background-color: #E9EDEE;
+    padding: 1px;
+    
+}
+
+.primo {
+    background-color: #F56600;
+    color: white;
+    margin: 30px;
+    text-align: center;
+    padding: 1px;
+  
+   
+   
+}
+.secondo {
+    
+    
+    background-image: url(../images/bg-image.png);
+    background-repeat: repeat;
+    text-align: center;
+    color: white;
+    margin: 30px;
+    background-position-y: left;
+    background-size: contain;
+    padding: 50px;
+}
+
+.terzo { margin: 30px;
+    justify-content: center;
+
+}
+
+.container img {
+    float: left;
+    margin-right: 10px; 
+   padding: 10px;
+    height: 100vh;
+    
+    
+}
+
+/* FOOTER */
