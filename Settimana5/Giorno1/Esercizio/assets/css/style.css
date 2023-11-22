@@ -23,6 +23,11 @@ header {
     margin-bottom: 1.5em;
     padding: 2em 1.5em;
 }
+
+header p {
+    font-size: 1.5em;
+}
+
 header div img {
     margin-bottom: 20px;
 }
@@ -31,6 +36,8 @@ header nav ul {
 }
 header nav li {
     list-style: none;
+    display: inline;
+    padding: 0 0.8em;
 }
 header nav li a {
     color: white;
@@ -133,15 +140,27 @@ tbody tr:last-of-type {
 input {
     padding: 5px;
     border: 0;
-    border-bottom: 1px dashed #333;
 }
+
 button {
-    padding: 4px 7px;
+    padding: 5px 10px;
     background-color: #3f6bca;
     border: 0;
     color: white;
+    font-size: 1em;
     font-weight: bold;
 }
+
+.subscription {
+    background-color: #cccccc;
+}
+
+.subscription h2 {
+    font-size: 1.2em;
+    padding: 5px;
+    background-color:#999999
+}
+
 
 /* ELEMENTI NELL' ASIDE */
 aside h2 {
@@ -153,8 +172,7 @@ aside h2 {
     margin-bottom: 1em;
 }
 aside div {
-    background-color: #e3e3e3;
-    border: 1px solid #c3c3c3;
+    background-color: #d6d5d5;
     margin-bottom: 1em;
     padding: 1em;
 }
@@ -178,3 +196,173 @@ footer {
 footer a {
     color: fuchsia;
 }
+
+
+/* MEDIA QUERIES */
+
+
+/* SE NON VOLESSI MODIFICARE IL CSS DI BASE POSSO IMPOSTARE QUESTA MEDIA QUERY CHE LAVORA DA O A 575PX */
+@media screen and (max-width: 575px) {
+    p,
+    ul,
+    ol {
+        font-size: 1.4rem;
+    }
+
+    h1 {
+        font-size: 3.5rem;
+    }
+
+    h2 {
+        font-size: 1.8rem;
+        font-weight: 700;
+    }
+}
+
+/* QUERIES PER SCHERMI DA 576PX IN SU */
+@media screen and (min-width: 576px) {
+
+    h1 {
+        font-size: 3rem;
+    }
+
+    p,
+    ul,
+    ol {
+        font-size: 1.2rem;
+    }
+
+    header nav li {
+        font-size: 1.25em;
+    }
+
+    h2 {
+        font-size: 1.4rem;
+        font-weight: 700;
+    }
+
+    input {
+        width: 70%;
+        padding: 15px;
+      }
+
+    button {
+        padding: 15px 30px;
+    }
+
+    table {
+        margin: 0 auto 2em;
+      }
+
+}
+
+
+
+/* QUERIES PER SCHERMI DA 768PX IN SU */
+@media screen and (min-width: 768px) {
+
+    h1 {
+        font-size: 3.6rem;
+      }
+
+    table {
+        width: 70%;
+        margin-block-start: 5rem;
+        margin-block-end: 6rem;
+    }
+}
+
+  /* MEDIA QUERIES PER SCHERMI DA 1200PX IN SU */
+@media screen and (min-width: 1200px) {
+
+    body {
+        line-height: 2;
+    }
+
+    header {
+        padding-top: 20px;
+        padding-bottom: 0px;
+    }
+
+    header,
+    main,
+    footer {
+        max-width: 1200px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    section {
+        border-radius: 20px;
+    }
+
+    header {
+        text-align: left;
+    }
+
+    header .brand,
+    header nav,
+    header .brand p {
+        display: inline-block;
+    }
+
+    header .brand {
+        width: 75%;
+    }
+
+    header .brand img {
+        vertical-align: middle;
+        margin-right: 20px;
+    }
+
+    iframe,
+    section {
+        display: inline-block;
+        width: 50%;
+        margin-inline: -2px;
+        vertical-align: middle;
+    }
+
+    iframe {
+        height: 267px;
+    }
+
+    aside div {
+        display: inline-block;
+        width: 33.333%;
+        margin-inline: -2px;
+    }
+
+  }
+
+
+
+  /* MEDIA QUERY PER LA STAMPA */
+  @media print {
+    body {
+        font-size: 24px;
+        padding: 0;
+        background-image: none;
+    }
+
+    main {
+        box-shadow: none;
+        margin: 0;
+    }
+
+    thead tr,
+    tbody tr {
+        border-bottom: 1px solid #666;
+    }
+
+    header,
+    article section,
+    iframe,
+    aside,
+    footer,
+    .social,
+    .toTop {
+        display: none;
+    }
+
+  }
