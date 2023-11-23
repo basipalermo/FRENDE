@@ -1,0 +1,67 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    line-height: 1.1;
+    font-size: 1.2em;
+    font-family: sans-serif;
+    color: #612406;
+    }
+
+.flex {
+  display: flex;
+}
+
+.box {
+  background-color: #f9f1c9;
+  flex-direction: row;
+  justify-content: center;
+  gap: 20px;
+  border-radius: 60px 60px 60px 60px;
+  width: 60%;
+}
+
+.bottoni {
+  background-color: #f3df85;
+  border-radius: 40px 40px 40px 40px;
+  width: 10vw;
+  display: inline-block;
+  padding: 5px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  text-align: center;
+  min-height: 50px;
+  padding-left: 1px;
+ 
+}
+
+
+div p {
+  margin: auto;
+
+}
+#uno {
+  margin-left: 30px;
+}
+
+#cinque {
+  margin-right: 30px;
+}
+
+#tre {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+
+.bottoni p {
+  height: 10px;
+  margin-top: 10px;
+}
+
+.bottoni img {
+  width: 30%;
+  padding-left: 15px;
+}

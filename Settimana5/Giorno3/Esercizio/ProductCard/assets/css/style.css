@@ -1,0 +1,78 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    line-height: 1.1;
+    font-size: 1.2em;
+    font-family: sans-serif;
+    }
+
+.flex{
+  display: flex;
+}
+
+#miele{
+  border-top-right-radius: 40%;
+  border-top-left-radius: 40%;
+}
+.container {
+    border-radius: 30%;
+    background-color: #f9f1c9;
+    width: 35vw;
+    height: 75vh;
+    text-align: center;
+    flex-direction: row;
+    align-items: baseline;
+    color: #612406;
+    margin-top: 10px;
+    
+}
+
+.data{
+  flex-direction: column;
+  align-items: center;
+  height: 50px;
+  margin-top: 50px;
+  margin-left: 50px;
+}
+
+.titolo{
+    flex: 2; 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    line-height: 1px;
+    padding: 0;
+    align-items: center;
+    font-weight: bold;
+    font-size: 1.3em;
+  }
+.titolo small{
+  font-size: 1.5em;
+}
+
+
+.prezzo{
+  flex: 1; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5em;
+ 
+}
+
+.bottone {
+  background-color: #F3DF85;
+  border-radius: 40px 40px 40px 40px;
+  width: 15vw;
+  display: inline-block;
+  padding: 5px; 
+  margin-top: 30px;
+  
+}
+
+.bottone p {
+  height: 10px;
+  margin-top: 10px;
+}
