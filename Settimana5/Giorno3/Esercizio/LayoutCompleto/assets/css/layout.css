@@ -1,0 +1,222 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    line-height: 1.1;
+    font-size: 1.2em;
+    font-family: sans-serif;
+    color: #612406;
+    display: flex;
+    }
+
+.flex {
+    display: flex;
+}
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+/* NAV BAR */
+
+.box {
+    background-color: #f9f1c9;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+    border-radius: 60px 60px 60px 60px;
+    min-width: 25% !important;
+}
+
+.bottoni {
+    background-color: #f3df85;
+    border-radius: 40px 40px 40px 40px;
+    width: 10vw;
+    display: inline-block;
+    padding: 5px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    text-align: center;
+    min-height: 50px;
+    padding-left: 1px;
+
+}
+
+
+#uno {
+    margin-left: 30px;
+}
+
+#cinque {
+    margin-right: 30px;
+}
+
+#tre {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+
+.bottoni p {
+    height: 10px;
+    margin-top: 10px;
+}
+
+.bottoni img {
+    width: 30%;
+    padding-left: 15px;
+}
+
+/*PRODUCT CARDS */
+
+
+  .container {
+      border-radius: 30%;
+      background-color: #f9f1c9;
+      width: 35vw;
+      height: 75vh;
+      text-align: center;
+      flex-direction: row;
+      align-items: baseline;
+      color: #612406;
+      margin-top: 10px;
+      
+  }
+  
+  .data{
+    flex-direction: column;
+    align-items: center;
+    height: 50px;
+    margin-top: 10px;
+    margin-left: 20px;
+  }
+  
+  .titolo{
+      flex: 2; 
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 0;
+      align-items: center;
+      font-weight: bold;
+      font-size: 1.3em;
+    }
+  .titolo small{
+    font-size: 1.5em;
+  }
+  
+  
+  .prezzo{
+    flex: 1; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+   
+  }
+  
+  .bottone {
+    background-color: #F3DF85;
+    border-radius: 40px 40px 40px 40px;
+    width: 15vw;
+    display: inline-block;
+    padding: 5px; 
+    margin-top: 30px;
+    
+  }
+  
+  .bottone p {
+    height: 10px;
+    margin-top: 10px;
+  }
+
+  /* ARTICLE */ 
+
+  article {
+    display: flex;
+    flex-wrap: wrap-reverse;
+  
+    gap: 30px;
+  
+    background-color: #fef7e2;
+    border-radius: 30px;
+    padding: 30px;
+  }
+  
+  article img {
+    flex: 1 1 500px; 
+    overflow: hidden;
+    object-fit: cover;
+  }
+  
+  article .article__text {
+    flex: 1 1 400px; 
+    line-height: 1.4;
+  }
+
+  /* MEDIA QUERIES */
+
+  @media screen and (min-width: 1201px){
+    .box {
+        flex-direction: column;
+    width: 100%;
+        border-top-right-radius: 0;
+        border-top-left-radius: 0;
+
+          
+    }
+    .containers{
+      display: flex;
+      gap: 20px;
+    }
+   
+    .bottoni {
+        width: 80%;
+        padding-top: 35px;
+        padding-bottom: 35px;
+        border-radius: 60px 60px 60px 60px;
+        margin-left: 30px;
+        margin-right: 30px;
+        margin-top: 1px;
+        margin-bottom: 1px;
+        font-weight: bold;      
+    }
+    #tre {
+        order: -1;
+        margin-top: 40px;
+        font-size: 2rem;
+    }
+    #tre img {
+        margin-left: 20px;
+    }
+
+    .container {
+      width: 15rem;
+      gap: 20px;
+      height: 16rem;
+      flex-direction: column;
+      border-radius: 50px;
+    }
+   .container img {
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+   }
+   .titolo, .prezzo, .bottone{
+    font-size: 16px;
+   }
+
+   .titolo{
+    margin-top: 1px;
+   }
+   .sottitolo{
+    margin-top: 10px;
+    font-size: 16px;
+   }
+    
+   .bottone{
+    margin-top: 10px;
+    width: 120px;
+   }
+  }
