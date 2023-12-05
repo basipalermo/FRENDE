@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>S7G1</title>
+</head>
+<body>
+
+    <h2>Pet Form</h2>
+
+
+    <form id="petForm">
+        <label for="petName"></label>
+        <input type="text"  id="petName" placeholder="Pet Name" required>
+        <label for="ownerName"></label>
+        <input type="text"  id="ownerName" placeholder="Owner Name" required>
+        <label for="species"></label>
+        <input type="text"  id="species" placeholder="Pet Species" required>
+        <label for="breed"></label>
+        <input type="text"  id="breed" placeholder="Pet Breed" required>
+
+        <button type="button" onclick="addPet()"> INVIA </button>
+    </form>
+
+    <h2>Pet List</h2>
+    
+       <ul id="petList"></ul>
+       
+
+
+
+
+
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
