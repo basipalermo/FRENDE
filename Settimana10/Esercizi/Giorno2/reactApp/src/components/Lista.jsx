@@ -1,6 +1,7 @@
 import { Card, Button } from 'react-bootstrap';
 import { useState } from 'react';
 import ListButtons from './ListButtons';
+import SingleBook from './SingleBook';
 
 const Lista = () => {
     const [list, setList] = useState([]);
@@ -11,16 +12,7 @@ const Lista = () => {
 
             <div className="d-flex justify-content-between flex-wrap">
             {list.map((book) => 
-                <Card style={{ width: '18rem' }} key={book.asin}>
-                    <Card.Img variant="top" src={book.img} />
-                    <Card.Body>
-                        <Card.Title>{book.title}</Card.Title>
-                        <Card.Text>
-                        {book.asin + ' - ' + book.price}
-                        </Card.Text>
-                        <Button variant="danger">Acquista</Button>
-                    </Card.Body>
-                </Card>
+               <SingleBook book = {book} key = {book.asin} />               
             )}
             </div>
         </>
